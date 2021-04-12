@@ -1,0 +1,3 @@
+Hex: #003893
+Hex: #DC143C
+#FFFFFF
