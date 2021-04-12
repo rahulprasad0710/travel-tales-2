@@ -63,9 +63,9 @@ const Navbar = () => {
                 onClick={() => setToggleMenu(false)}
                 className="navbar_nav-menu-item-link"
                 activeClassName="navLink-active"
-                to="/category/"
+                to="/tales/"
               >
-                CATEGORY
+                TALES
               </Link>
             </li>
             <li className="navbar_nav-menu-item">
@@ -73,9 +73,9 @@ const Navbar = () => {
                 onClick={() => setToggleMenu(false)}
                 className="navbar_nav-menu-item-link"
                 activeClassName="navLink-active"
-                to="/about/"
+                to="/destination/"
               >
-                ABOUT
+                DESTINATION
               </Link>
             </li>
             <li className="navbar_nav-menu-item">

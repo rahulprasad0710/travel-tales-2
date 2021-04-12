@@ -1,0 +1,7 @@
+.main-page_image {
+  background-image: linear-gradient(
+    90deg,
+    rgba(27, 188, 155, 0.3) 0%,
+    rgba(20, 185, 213, 0.3) 100%
+  ) !important;
+}
