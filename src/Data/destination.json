@@ -1,0 +1,22 @@
+{
+  "destination": [
+    {
+      "destination_id": " 01",
+      "title": "mount everset",
+      "pack": " 3 Night/ 4Days ",
+      "desPhoto": "../images/discover/mountain1.jpg"
+    },
+    {
+      "destination_id": " 02",
+      "title": "kathmandu",
+      "pack": " 3 Night/ 4Days ",
+      "desPhoto": "../images/discover/mountain1.jpg"
+    },
+    {
+      "destination_id": " 03",
+      "title": "chitwan",
+      "pack": " 3 Night/ 4Days ",
+      "desPhoto": "../images/discover/mountain1.jpg"
+    }
+  ]
+}

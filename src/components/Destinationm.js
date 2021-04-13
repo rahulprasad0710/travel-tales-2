@@ -1,25 +1,49 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const Destinationm = () => {
+  const destinationQuery = graphql`
+    {
+      dataJson {
+        destination {
+          destination_id
+          pack
+          title
+          desPhoto {
+            childImageSharp {
+              gatsbyImageData(layout: FIXED, placeholder: BLURRED)
+            }
+          }
+        }
+      }
+    }
+  `
+
+  const fetchData = useStaticQuery(destinationQuery)
+  const destinationData = fetchData.dataJson.destination
+  console.log(destinationData)
+  const eachDestination = destinationData.map(e => (
+    <div className="main-page__destination-imgbox">
+      <GatsbyImage
+        image={e.desPhoto.childImageSharp.gatsbyImageData}
+        alt={e.title}
+      />
+      <div className="main-page__destination-imgboxtext-group">
+        <h3>{e.title}</h3>
+        <h4>{e.pack}</h4>
+        <button className="btn btn-destination">VIEW DESTINATION</button>
+      </div>
+    </div>
+  ))
+
   return (
     <div className="main-page__destination">
       <h1>OUR DESTINATION</h1>
       <section className="main-page__destination-images">
-        <div className="main-page__destination-imgbox">
-          <StaticImage
-            src="../images/discover/mountain1.jpg"
-            placeholder="blurred"
-            alt="Everest"
-            className="main-page_destination-image"
-          />
-          <div className="main-page__destination-imgboxtext-group">
-            <h3>Pokhara</h3>
-            <h4>3 days 4 Nights</h4>
-            <button className="btn">VIEW DESTINATION</button>
-          </div>
-        </div>
+        {fetchData ? eachDestination : <h3>Loading....</h3>}
       </section>
     </div>
   )

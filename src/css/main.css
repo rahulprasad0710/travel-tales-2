@@ -1,3 +1,23 @@
+/* <-----------------------------Common CSS Style ------------------> */
+
+.btn {
+  border-radius: 38px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  border: #1bbc9b 1px solid;
+  font-size: 14px;
+  background-color: #1bbc9b;
+  padding: 15px 35px;
+  transition: all 0.5s ease;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #1bbc9b;
+  background: #ffff;
+}
+
 .main-page {
   position: relative;
 }
@@ -48,8 +68,10 @@
 }
 
 .main-page__destination-imgbox {
+  color: var(--white);
   position: relative;
-  max-height: 240px;
+  height: 370px;
+  max-width: 370px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -57,10 +79,21 @@
   transition: transform 2s ease;
 }
 
+.main-page__destination-imgbox h3,
+.main-page__destination-imgbox h4 {
+  letter-spacing: 1.2px;
+}
 .main-page__destination-imgboxtext-group {
   position: absolute;
+  margin-bottom: 2rem;
+  bottom: 0;
   z-index: 20;
   text-align: center;
+}
+
+.btn-destination {
+  padding: 12px 30px;
+  margin: 0.5rem;
 }
 
 /* <----------------------------Discover----------------------> */
@@ -103,24 +136,6 @@
 .main-page_discover-image {
   transform: scale(1);
   transition: transform 2s ease;
-}
-
-.btn {
-  border-radius: 38px;
-  letter-spacing: 2px;
-  line-height: 14px;
-  border: #1bbc9b 1px solid;
-  font-size: 14px;
-  background-color: #1bbc9b;
-  padding: 15px 35px;
-  transition: all 0.5s ease;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.btn:hover {
-  color: #1bbc9b;
-  background: #ffff;
 }
 
 /* <----------------------------------MAX-WIDTH = 7750px -------------------------------------> */
