@@ -2,21 +2,45 @@
   "destination": [
     {
       "destination_id": " 01",
-      "title": "mount everset",
-      "pack": " 3 Night/ 4Days ",
+      "title": "Mount Everset",
+      "pack": " 5 Days / 4 Nights ",
       "desPhoto": "../images/discover/mountain1.jpg"
     },
     {
       "destination_id": " 02",
-      "title": "kathmandu",
-      "pack": " 3 Night/ 4Days ",
-      "desPhoto": "../images/discover/mountain1.jpg"
+      "title": "Kathmandu",
+      "pack": " 4 Days / 3 Nights ",
+      "desPhoto": "../images/discover/ktm.jpg"
     },
     {
       "destination_id": " 03",
-      "title": "chitwan",
-      "pack": " 3 Night/ 4Days ",
+      "title": "Mustang Manang",
+      "pack": " 5 Days / 4 Nights ",
       "desPhoto": "../images/discover/mountain1.jpg"
+    },
+    {
+      "destination_id": " 04",
+      "title": "chitwan",
+      "pack": " 2 Days / 1 Nights ",
+      "desPhoto": "../images/discover/chitwan.jpg"
+    },
+    {
+      "destination_id": " 05",
+      "title": "Pokhara",
+      "pack": " 4 Days / 3 Nights ",
+      "desPhoto": "../images/discover/pokhara2.jpg"
+    },
+    {
+      "destination_id": " 06",
+      "title": "Janakpur",
+      "pack": " 2 Days / 1Nights ",
+      "desPhoto": "../images/discover/janakpur.jpg"
+    },
+    {
+      "destination_id": " 06",
+      "title": "Lumbini",
+      "pack": " 2 Days / 1Nights ",
+      "desPhoto": "../images/discover/lumbini.jpg"
     }
   ]
 }
