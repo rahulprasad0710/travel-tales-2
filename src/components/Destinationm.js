@@ -14,7 +14,7 @@ const Destinationm = () => {
           title
           desPhoto {
             childImageSharp {
-              gatsbyImageData(layout: FIXED, placeholder: BLURRED)
+              gatsbyImageData(layout: FIXED, placeholder: DOMINANT_COLOR)
             }
           }
         }
@@ -28,9 +28,16 @@ const Destinationm = () => {
   const eachDestination = destinationData.map(e => (
     <div className="main-page__destination-imgbox">
       <GatsbyImage
+        className="main-page__destination-imgonly"
         image={e.desPhoto.childImageSharp.gatsbyImageData}
         alt={e.title}
       />
+      <div
+        className="blurbox"
+        style={{
+          backgroundColor: `${e.desPhoto.childImageSharp.gatsbyImageData.backgroundColor}`,
+        }}
+      ></div>
       <div className="main-page__destination-imgboxtext-group">
         <h3>{e.title}</h3>
         <h4>{e.pack}</h4>

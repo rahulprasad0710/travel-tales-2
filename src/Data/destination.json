@@ -7,12 +7,6 @@
       "desPhoto": "../images/discover/mountain1.jpg"
     },
     {
-      "destination_id": " 02",
-      "title": "Kathmandu",
-      "pack": " 4 Days / 3 Nights ",
-      "desPhoto": "../images/discover/ktm.jpg"
-    },
-    {
       "destination_id": " 03",
       "title": "Mustang Manang",
       "pack": " 5 Days / 4 Nights ",
@@ -41,6 +35,12 @@
       "title": "Lumbini",
       "pack": " 2 Days / 1Nights ",
       "desPhoto": "../images/discover/lumbini.jpg"
+    },
+    {
+      "destination_id": " 02",
+      "title": "Kathmandu",
+      "pack": " 4 Days / 3 Nights ",
+      "desPhoto": "../images/discover/ktm.jpg"
     }
   ]
 }
