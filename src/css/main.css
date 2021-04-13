@@ -28,7 +28,17 @@
 
 /* <----------------------------Destination----------------------> */
 
-.main-page__destinationm-images {
+.main-page__destination h1 {
+  color: var(--grey);
+  font-size: 40px;
+  font-weight: bold;
+  padding: 4rem 0 1rem 0;
+  text-decoration: underline;
+  text-decoration-color: #1bbc9b;
+  text-decoration-thickness: 2px;
+}
+
+.main-page__destination-images {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
@@ -37,8 +47,20 @@
   margin: 2rem 0;
 }
 
-.main-page_discover-image {
-  width: 100%;
+.main-page__destination-imgbox {
+  position: relative;
+  max-height: 240px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 2s ease;
+}
+
+.main-page__destination-imgboxtext-group {
+  position: absolute;
+  z-index: 20;
+  text-align: center;
 }
 
 /* <----------------------------Discover----------------------> */
@@ -55,11 +77,16 @@
   position: relative;
   max-height: 240px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 2s ease;
 }
 
 .main-page__discover-imgboxtext-group {
   position: absolute;
   z-index: 20;
+  text-align: center;
 }
 
 .main-page__discover-imgboxtext-group h3 {
@@ -70,7 +97,15 @@
   font-weight: bold;
 }
 
-.main-page__discover-imgboxtext-group button {
+.main-page__discover-imgbox:hover .main-page_discover-image {
+  transform: scale(1.1);
+}
+.main-page_discover-image {
+  transform: scale(1);
+  transition: transform 2s ease;
+}
+
+.btn {
   border-radius: 38px;
   letter-spacing: 2px;
   line-height: 14px;
@@ -78,9 +113,16 @@
   font-size: 14px;
   background-color: #1bbc9b;
   padding: 15px 35px;
-  margin: ;
+  transition: all 0.5s ease;
   color: #ffffff;
+  cursor: pointer;
 }
+
+.btn:hover {
+  color: #1bbc9b;
+  background: #ffff;
+}
+
 /* <----------------------------------MAX-WIDTH = 7750px -------------------------------------> */
 
 @media only screen and (max-width: 770px) {
@@ -95,6 +137,10 @@
   .main-page__discover {
     grid-template-columns: 1fr;
     grid-gap: 0rem;
+  }
+
+  .main-page__discover-imgbox {
+    max-height: none;
   }
 }
 

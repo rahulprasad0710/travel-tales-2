@@ -8,7 +8,7 @@ const Discover = () => {
       <div className="main-page__discover-imgbox">
         <div className="main-page__discover-imgboxtext-group">
           <h3>Discover Mountains</h3>
-          <button>Details</button>
+          <button className="btn">Details</button>
         </div>
         <StaticImage
           src="../images/discover/mountain1.jpg"
@@ -19,14 +19,22 @@ const Discover = () => {
       </div>
 
       <div className="main-page__discover-imgbox">
+        <div className="main-page__discover-imgboxtext-group">
+          <h3>Discover Cities</h3>
+          <button className="btn">Details</button>
+        </div>
         <StaticImage
-          src="../images/discover/city22.jpg"
+          src="../images/discover/city3.jpg"
           placeholder="blurred"
           alt="Everest"
           className="main-page_discover-image"
         />
       </div>
       <div className="main-page__discover-imgbox">
+        <div className="main-page__discover-imgboxtext-group">
+          <h3>Discover Jungle</h3>
+          <button className="btn">Details</button>
+        </div>
         <StaticImage
           src="../images/discover/jungle1.jpg"
           placeholder="blurred"

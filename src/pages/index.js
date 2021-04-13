@@ -21,11 +21,10 @@ const IndexPage = () => (
       />
       <h1 className="main-page__heading">LOVE & TRAVEL </h1>
     </section>
-    <section className="main-page__category container-lg">
+    <section className="section-destination container-lg">
       <Destinationm />
     </section>
-    <section className="mage-page__discover">
-      <h1>DISCOVER</h1>
+    <section className="section-discover ">
       <Discover />
     </section>
   </Layout>
