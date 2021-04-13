@@ -5,17 +5,29 @@ import "../css/main.css"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Destinationm from "../components/Destinationm"
+import Discover from "../components/Discover"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <StaticImage
-      src="../images/maine.jpg"
-      placeholder="blurred"
-      layout="fullWidth"
-      alt="Everest"
-      className="main-page_image"
-    />
+    <SEO title="Home Page" />
+    <section className="main-page">
+      <StaticImage
+        src="../images/maine.jpg"
+        placeholder="blurred"
+        layout="fullWidth"
+        alt="Everest"
+        className="main-page_image"
+      />
+      <h1 className="main-page__heading">LOVE & TRAVEL </h1>
+    </section>
+    <section className="main-page__category container-lg">
+      <Destinationm />
+    </section>
+    <section className="mage-page__discover">
+      <h1>DISCOVER</h1>
+      <Discover />
+    </section>
   </Layout>
 )
 

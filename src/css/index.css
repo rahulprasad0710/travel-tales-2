@@ -4,6 +4,9 @@
   --blue: #003893;
   --white: #ffffff;
   --red: #dc143c;
+  --grey: #555555;
+  --hoveron: rgba(27, 188, 155, 0.3);
+  --clicked: rgba(20, 185, 213, 0.3);
 }
 
 body {

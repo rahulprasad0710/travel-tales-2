@@ -1,7 +1,116 @@
+.main-page {
+  position: relative;
+}
+
 .main-page_image {
   background-image: linear-gradient(
     90deg,
     rgba(27, 188, 155, 0.3) 0%,
     rgba(20, 185, 213, 0.3) 100%
   ) !important;
+  margin-top: -15vh;
+}
+
+.main-page__heading {
+  top: 60%;
+  left: 20%;
+  transform: translate(0%, -60%);
+  z-index: 15;
+  font-weight: bolder;
+  position: absolute;
+  font-size: 8vw;
+  font-style: normal;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #1bbc9b 0%, #14b9d5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* <----------------------------Destination----------------------> */
+
+.main-page__destinationm-images {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: 100vw;
+  margin: 2rem 0;
+}
+
+.main-page_discover-image {
+  width: 100%;
+}
+
+/* <----------------------------Discover----------------------> */
+
+.main-page__discover {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2rem auto;
+  max-width: 100vw;
+  grid-gap: 1rem 0;
+}
+
+.main-page__discover-imgbox {
+  position: relative;
+  max-height: 240px;
+  overflow: hidden;
+}
+
+.main-page__discover-imgboxtext-group {
+  position: absolute;
+  z-index: 20;
+}
+
+.main-page__discover-imgboxtext-group h3 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 0px;
+  font-weight: bold;
+}
+
+.main-page__discover-imgboxtext-group button {
+  border-radius: 38px;
+  letter-spacing: 2px;
+  line-height: 14px;
+  border: #1bbc9b 1px solid;
+  font-size: 14px;
+  background-color: #1bbc9b;
+  padding: 15px 35px;
+  margin: ;
+  color: #ffffff;
+}
+/* <----------------------------------MAX-WIDTH = 7750px -------------------------------------> */
+
+@media only screen and (max-width: 770px) {
+  /* <----------------------------Destination---------------------->  */
+
+  .main-page__destinationm-images {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* <----------------------------Discover----------------------> */
+
+  .main-page__discover {
+    grid-template-columns: 1fr;
+    grid-gap: 0rem;
+  }
+}
+
+/* <----------------------------------MAX-WIDTH = 7750px -------------------------------------> */
+
+@media only screen and (max-width: 420px) {
+  /* <----------------------------Destination---------------------->  */
+
+  .main-page__destinationm-images {
+    grid-template-columns: 1fr;
+  }
+
+  /* <----------------------------Discover----------------------> */
+
+  .main-page__discover-images {
+    grid-template-columns: 1fr;
+    grid-gap: 0rem;
+  }
 }

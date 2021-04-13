@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 
 const galleryQuery = graphql`
   {
-    allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+    allFile(filter: { sourceInstanceName: { eq: "gallery" } }) {
       nodes {
         childImageSharp {
           gatsbyImageData
@@ -38,7 +38,6 @@ const Gallery = () => {
     <Layout>
       <Seo title={"Gallery Page"} description={"recipe gallery"} />
       <div className="gallery-container container-lg">
-        <h2 className="page-cat-category"> GALLERY</h2>
         <div className="gallery-grid">{eachImgItem}</div>
       </div>
     </Layout>

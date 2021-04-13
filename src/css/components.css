@@ -1,0 +1,19 @@
+/* <----------------------------Footer------------------------->> */
+.page-footer {
+  background: var(--grey);
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer_info {
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  text-align: center;
+}
+
+.page-footer_info h3 {
+  padding: 5px 0;
+}
